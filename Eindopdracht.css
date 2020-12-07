@@ -1,0 +1,221 @@
+body{
+   background-color: rgb(255, 255, 255);
+ border: 5px solid black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    color: blue;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.dropdownmenu ul, .dropdownmenu li {
+
+    padding: 0px;
+    border: 1px solid black;
+}
+.dropdownmenu ul {
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+.dropdownmenu li {
+    float: left;
+    position: relative;
+    width:auto;
+}
+.dropdownmenu a {
+    background: rgb(9, 104, 180);
+    color: #FFFFFF;
+    display: block;
+    font: italic bold 12px/20px sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: black;
+}
+
+.dropdownmenu li:hover a {
+    background: #f00000;
+    text-decoration-style: black;
+}
+#submenu {
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+}
+li:hover ul#submenu {
+    top: 33px; 
+    visibility: visible;
+}
+#submenu li {
+    float: none;
+    width: 100%;
+}
+#submenu a:hover {
+    background: #DF4B05;
+}
+#submenu a {
+    background-color:#e41818;
+}
+
+.animation {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    -webkit-animation-name: Lamborghini; 
+    -webkit-animation-duration: 3s; 
+    animation-name: Lamborghini;
+    animation-duration: 3s;
+}
+#koptext{
+    color: aqua;
+    font-size: 50px;
+    font-style: italic;
+}
+
+@-webkit-keyframes Lamborghini {
+    0%   {background-color:rgb(255, 255, 255); left:10px;}
+
+    100% {background-color:rgb(255, 255, 255); left:1500px;}
+}
+
+
+@keyframes Lamborghini {
+    0%   {background-color:rgb(255, 255, 255); left:10px;}
+
+    100% {background-color:rgb(255, 255, 255); left:1500px;}
+}
+
+
+@media screen and (max-width: 480px) {
+    div.a{
+     font-size: 10px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 1024px) {
+    div.a{
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    div.a{
+        font-size: 30px;
+    }
+  }
+@media screen and (max-width: 480px) {
+    img{
+      height: 45px;
+      width: 100px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 1024px) {
+    img{
+      height: 90px;
+      width: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    img{
+       height: 175px;
+       width: 400px;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    p{
+     font-size: 10px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 1024px) {
+    p{
+        font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    p{
+        font-size: 30px;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    nav.dropdownmenu{
+        
+        .dropdownmenu ul, .dropdownmenu li {
+
+            padding: 0px;
+            border: 1px solid black;
+        }
+        .dropdownmenu ul {
+            background: gray;
+            list-style: none;
+            width: 100%;
+        }
+        .dropdownmenu li {
+            float: left;
+            position: relative;
+            width:auto;
+        }
+        .dropdownmenu a {
+            background: rgb(9, 104, 180);
+            color: #FFFFFF;
+            display: block;
+            font: italic bold 12px/20px sans-serif;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: black;
+        }
+        
+        .dropdownmenu li:hover a {
+            background: #f00000;
+            text-decoration-style: black;
+        }
+        #submenu {
+            margin: 0px;
+            left: 0px;
+            right: 0px;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+        }
+        li:hover ul#submenu {
+            top: 33px; 
+            visibility: visible;
+        }
+        #submenu li {
+            float: none;
+            width: 100%;
+        }
+        #submenu a:hover {
+            background: #DF4B05;
+        }
+        #submenu a {
+            background-color:#e41818;
+        }
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 1024px) {
+    nav.dropdownmenu{
+        font: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    nav.dropdownmenu{
+        font: 30px;
+    }
+  }
